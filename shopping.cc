@@ -22,7 +22,7 @@ void Shopping::PrintList() {
 
 // Sort shopping_list_ Elements by Price
 // Apply Selection Sort algorithm
-void Shopping::SortByPrice() {
+void Shopping::SortByPrice() {     // SortByPrice & ShortByIndex 두개 함수를 하나로 처리가능 할것으로 보입니다. Price & Index별 처리 하는 로직이 동일 함 
   std::vector<Goods>::iterator p = shopping_list_.begin();
   std::vector<Goods>::iterator min = shopping_list_.end();
   for (std::vector<Goods>::iterator i = shopping_list_.begin();
@@ -43,7 +43,7 @@ void Shopping::SortByPrice() {
 
 // Sort shopping_list_ Elements by Index
 // Apply Selection Sort algorithm
-void Shopping::SortByIndex() {
+void Shopping::SortByIndex() { // SortByPrice & ShortByIndex 두개 함수를 하나로 처리가능 할것으로 보입니다. Price & Index별 처리 하는 로직이 동일 함 
   std::vector<Goods>::iterator p = shopping_list_.begin();
   std::vector<Goods>::iterator min = shopping_list_.end();
   for (std::vector<Goods>::iterator i = shopping_list_.begin();
